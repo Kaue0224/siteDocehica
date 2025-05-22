@@ -1,0 +1,77 @@
+/* Contêiner do slideshow */
+.slideshow-container {
+  max-width: 1270px;
+  position: relative;
+  margin: auto;
+}
+
+
+.slideshow-container img{
+
+  width: 1270px;
+
+
+}
+
+
+
+/* Esconde as imagens por padrão */
+.mySlides {
+  display: none;
+}
+
+/* Botões de próximo e anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(252, 129, 129);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posiciona o botão "próximo" à direita */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ao passar o mouse, adiciona uma cor de fundo preta com um pouco de transparência */
+.prev:hover, .next:hover {
+  background-color: rgba(253, 174, 174, 0.8);
+}
+
+/* Os pontos/balões/indicadores */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Estado ativo e ao passar o mouse sobre os pontos */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação de desvanecimento */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Definindo a animação de desvanecimento */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

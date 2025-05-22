@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: white; /* Aplica o fundo branco apenas no corpo */
+}
+
+.CabeçalhoHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: pink;
+    padding: 10px 20px;
+    color: rgb(243, 236, 236);
+    font-style: italic;
+    margin-top: 0; 
+    margin-bottom: 0;  
+}
+
+.organibutton {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.button {
+    background-color: rgb(243, 236, 236); /*muda a cor do fundo do botao*/
+    border: none; 
+    border-radius: 5px;
+    color: rgb(255, 117, 117); /*muda da cor da letra do botao*/
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.textoexplicativo {
+    color: rgb(255, 117, 117);
+}
